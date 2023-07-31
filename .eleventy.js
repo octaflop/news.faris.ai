@@ -11,11 +11,11 @@ module.exports = eleventyConfig => {
   eleventyConfig.addPlugin(bundlerPlugin);
 
   // 	--------------------- Serverless functions ---------------------
-  // const { EleventyServerlessBundlerPlugin } = require("@11ty/eleventy");
-  // eleventyConfig.addPlugin(EleventyServerlessBundlerPlugin, {
-  //   name: "farisrun",
-  //   functionsDir: "./functions/"
-  // });
+  const { EleventyServerlessBundlerPlugin } = require("@11ty/eleventy");
+  eleventyConfig.addPlugin(EleventyServerlessBundlerPlugin, {
+    name: "news",
+    functionsDir: "./functions/"
+  });
 
   // status.xml to root directory
   // TODO: Make this dynamic, eg via _data/sitestatus.js
