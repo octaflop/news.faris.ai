@@ -1,0 +1,17 @@
+name = "chat-faris-ai"
+main = "src/worker.js"
+compatibility_date = "2023-07-24"
+minify = true
+
+[env.local]
+name = "chat-faris-ai-dev"
+vars = { ENVIRONMENT = "dev" }
+
+[env.staging]
+name = "chat-faris-ai-staging"
+route = "staging.chat.faris.ai/*"
+
+[env.production]
+name = "chat-faris-ai"
+vars = { ENVIRONMENT = "production" }
+

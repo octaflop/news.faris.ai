@@ -1,0 +1,21 @@
+{
+  "name": "news.faris.ai",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "deploy": "npx @11ty/eleventy",
+    "start": "npx @11ty/eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "wrangler": "^3.0.0"
+  },
+  "dependencies": {
+    "@11ty/eleventy-plugin-bundle": "^1.0.4",
+    "@11ty/eleventy-plugin-inclusive-language": "^1.0.3",
+    "@11ty/eleventy-plugin-rss": "^1.2.0",
+    "cheerio": "^1.0.0-rc.12",
+    "langchain": "^0.0.118",
+    "snarkdown": "^2.0.0"
+  }
+}
