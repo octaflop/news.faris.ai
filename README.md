@@ -1,2 +1,3 @@
-# 🤯 `news.faris.ai` is an auto-genrating news function
+# 🤯 `news.faris.ai` is an auto-generating news function
 
+This repo leverages cloudflare pages + functions (which leverage workers) in order to build a `{{ news }}` tag which can be used to build a cached template with little overhead...
